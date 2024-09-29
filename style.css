@@ -13,13 +13,21 @@ body {
 }
 
 img{
-    size: 100px;
+    size: 50px;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
     max-width: 1200px;
+}
+
+strong{
+        font-family: Arial, Helvetica, sans-serif; 
+                background: linear-gradient(to right, rgb(66, 234, 136), 
+                        rgb(66,234,136), rgb(255, 255, 255), #ffffff); 
+                -webkit-text-fill-color: transparent; 
+                -webkit-background-clip: text; 
 }
 
 /* Navigation Bar */
@@ -170,15 +178,11 @@ img{
     font-size: 0.9rem;
 }
 
-.left-aligned-div {
-    width: 350px;
-    height: 500px;
-    background-color: rgb(66,246, 136);
-    color: white;
-    padding: 20px;
-    float: left; 
-    margin: 20px;
+.center-div {
     transition: transform 0.3s ease;
+}
+.center-div:hover{
+    transform: translateY(-10px);
 }
 
 .right-aligned-div {
@@ -206,4 +210,9 @@ img{
 .textmakeup2{
     font-family: "Raleway", sans-serif;
     font-size: 22.5px !important;
+}
+
+.icon {
+    font-size: 48px; /* Change this value to resize the icon */
+    color: rgb(66, 234, 136); /* Example color */
 }
