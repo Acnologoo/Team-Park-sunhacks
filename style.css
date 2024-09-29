@@ -111,7 +111,7 @@ strong{
 .about {
     font-family: "Raleway", sans-serif;
     padding: 3rem 0;
-    background-color: #f4f4f4;
+    background-color: #333;
     text-align: center;
 }
 
@@ -119,40 +119,53 @@ strong{
     font-family: "Raleway", sans-serif;
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: white;
+}
+
+.about p{
+    color: white;
 }
 
 /* Services Section */
-.map {
+.service {
+    color:white;
     font-family: "Raleway", sans-serif;
     padding: 3rem 0;
     text-align: center;
+    background-color: #333;
 }
 
-.map-box {
+.service-box {
     display: inline-block;
     width: 30%;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #333;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
+    border: 5px solid rgba(66,234,136);
     transition: transform 0.3s ease;
 }
 
-.map-box:hover {
+.service-box:hover {
     transform: translateY(-10px);
 }
 
-.map h3 {
+.service h3 {
     font-size: 1.75rem;
     margin-bottom: 15px;
+    color:white;
 }
 
+.service p {
+    color:white;
+}
 /* Contact Section */
 .contact {
     font-family: "Raleway", sans-serif;
     padding: 3rem 0;
-    background-color: #f4f4f4;
+    background-color: #333;
     text-align: center;
+    color:white;
 }
 
 .contact a {
@@ -180,6 +193,11 @@ strong{
 
 .center-div {
     transition: transform 0.3s ease;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 20px;
+    border-color:white;
+    padding: 20px;
+    border: 10px solid rgba(66,234,136,0.9);
 }
 .center-div:hover{
     transform: translateY(-10px);
