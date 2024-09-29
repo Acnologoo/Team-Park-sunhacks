@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Raleway", sans-serif;
     background-color: #333;
     line-height: 1.6;
 }
@@ -136,6 +136,7 @@ strong{
     width: 795px;
     justify-content: flex-end;
     flex-wrap: wrap;
+    border-radius: 10px;
 }
 
 .parkingbox {
@@ -149,6 +150,11 @@ strong{
     height: 150px;
     width: 225px;
     flex-wrap: wrap;
+    transition: transform 0.3s ease;
+}
+
+.parkingbox:hover{
+    transform: translateY(-5px);
 }
 
 .number {
@@ -173,13 +179,26 @@ strong{
 }
 
 .edit {
-    background-color: rgb(131, 138, 140);
-    color: rgb(214, 214, 214);
-    width: 100px;
-    height: 40px;
-    margin: auto;
-    margin-top: 0px;
-    border-radius: 20px;
+  background-color: #333;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 0px;
+  transition: background-color 0.15s, color 0.15s, opacity 0.15s;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.edit:hover{
+    background-color: rgb(66, 234, 136);
+    color: #fff;
+    border-color:#fff;
 }
 
 /* Services Section */
