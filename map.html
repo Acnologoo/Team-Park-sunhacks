@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Team park</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -26,49 +26,274 @@
      <div class="background">
         <div class="parkingbox">
             <div class="number">1</div>
-            <div class="status">Status: Free</div>
-            <button type="button" class="edit">Edit</button>
+            <div class="status" id="text">Status: Free</div>
+            <button onclick="changeTextColor()" id="button" type="button" class="edit">Edit</button>
         </div>
+        <script>
+            function changeTextColor() {
+                const questionDiv = document.getElementById('text');
+                const button = document.getElementById('button');
+                questionDiv.innerHTML = `
+                    <button onclick="multiple()" id="button2" type="button" class="edit">Free</button>
+                    <button onclick="multiple2()" id="button3" type="button" class="edit">Occupied</button>
+                `;
+                button.style.display = 'none';
+            }
+            function multiple(){
+                const questionDiv = document.getElementById('text');
+                questionDiv.innerHTML = `
+                    <div class="status" id="text" style="font-size: 20px; color: green">Status: Free</div>
+                    <button onclick="changeTextColor()" id="button" type="button" class="edit">Edit</button>
+                `;
+            }
+            function multiple2(){
+                const questionDiv = document.getElementById('text');
+                questionDiv.innerHTML = `
+                    <div class="status" id="text" style="font-size: 20px; color: red;" >Status: Occupied</div>
+                    <button onclick="changeTextColor()" id="button" type="button" class="edit">Edit</button>
+                `;
+            }
+        </script>
         <div class="parkingbox">
             <div class="number">2</div>
-            <div class="status">Status: Free</div>
-            <button type="button" class="edit">Edit</button>
+            <div class="status" id="text1">Status: Free</div>
+            <button type="button" class="edit" onclick="changeTextColor1()" id="button1">Edit</button>
         </div>
+        <script>
+            function changeTextColor1() { 
+                const questionDiv = document.getElementById('text1');
+                const button = document.getElementById('button1');  
+                questionDiv.innerHTML = `
+                    <button onclick="multiple3()" id="button4" type="button" class="edit">Free</button> 
+                    <button onclick="multiple4()" id="button5" type="button" class="edit">Occupied</button> 
+                `;
+                button.style.display = 'none';
+            }
+            function multiple3(){ 
+                const questionDiv = document.getElementById('text1'); 
+                questionDiv.innerHTML = `
+                    <div class="status" id="text1" style="font-size: 20px; color: green;">Status: Free</div> 
+                    <button onclick="changeTextColor1()" id="button1" type="button" class="edit">Edit</button> 
+                `;
+            }
+            function multiple4(){ 
+                const questionDiv = document.getElementById('text1'); 
+                questionDiv.innerHTML = `
+                    <div class="status" id="text1" style="font-size: 20px; color: red;" >Status: Occupied</div> 
+                    <button onclick="changeTextColor1()" id="button1" type="button" class="edit">Edit</button> 
+                `;
+            }
+        </script>
         <div class="parkingbox">
             <div class="number">3</div>
-            <div class="status">Status: Free</div>
-            <button type="button" class="edit">Edit</button>
+            <div class="status" id="text2">Status: Free</div>
+            <button type="button" class="edit" onclick="changeTextColor2()" id="button2">Edit</button>
         </div>
+        <script>
+            function changeTextColor2() { 
+                const questionDiv = document.getElementById('text2');
+                const button = document.getElementById('button2');  
+                questionDiv.innerHTML = `
+                    <button onclick="multiple5()" id="button5" type="button" class="edit">Free</button> 
+                    <button onclick="multiple6()" id="button6" type="button" class="edit">Occupied</button> 
+                `;
+                button.style.display = 'none';
+            }
+            function multiple5(){ 
+                const questionDiv = document.getElementById('text2'); 
+                questionDiv.innerHTML = `
+                    <div class="status" id="text2" style="font-size: 20px; color: green;">Status: Free</div> 
+                    <button onclick="changeTextColor2()" id="button2" type="button" class="edit">Edit</button> 
+                `;
+            }
+            function multiple6(){ 
+                const questionDiv = document.getElementById('text2'); 
+                questionDiv.innerHTML = `
+                    <div class="status" id="text2" style="font-size: 20px; color: red;" >Status: Occupied</div> 
+                    <button onclick="changeTextColor2()" id="button2" type="button" class="edit">Edit</button> 
+                `;
+            }
+        </script>
         <div class="parkingbox">
             <div class="number">4</div>
-            <div class="status">Status: Free</div>
-            <button type="button" class="edit">Edit</button>
+            <div class="status" id="text3">Status: Free</div>
+            <button type="button" class="edit" onclick="changeTextColor3()" id="button3">Edit</button>
         </div>
+        <script>
+            function changeTextColor3() { 
+                const questionDiv = document.getElementById('text3');
+                const button = document.getElementById('button3');  
+                questionDiv.innerHTML = `
+                    <button onclick="multiple7()" id="button7" type="button" class="edit">Free</button> 
+                    <button onclick="multiple8()" id="button8" type="button" class="edit">Occupied</button> 
+                `;
+                button.style.display = 'none';
+            }
+            function multiple7(){ 
+                const questionDiv = document.getElementById('text3'); 
+                questionDiv.innerHTML = `
+                    <div class="status" id="text3" style="font-size: 20px; color: green;">Status: Free</div> 
+                    <button onclick="changeTextColor3()" id="button3" type="button" class="edit">Edit</button> 
+                `;
+            }
+            function multiple8(){ 
+                const questionDiv = document.getElementById('text3'); 
+                questionDiv.innerHTML = `
+                    <div class="status" id="text3" style="font-size: 20px; color: red;" >Status: Occupied</div> 
+                    <button onclick="changeTextColor3()" id="button3" type="button" class="edit">Edit</button> 
+                `;
+            }
+        </script>
         <div class="parkingbox">
             <div class="number">5</div>
-            <div class="status">Status: Free</div>
-            <button type="button" class="edit">Edit</button>
+            <div class="status" id="text4">Status: Free</div>
+            <button type="button" class="edit" onclick="changeTextColor4()" id="button4">Edit</button>
         </div>
+        <script>
+            function changeTextColor4() { 
+                const questionDiv = document.getElementById('text4');
+                const button = document.getElementById('button4');  
+                questionDiv.innerHTML = `
+                    <button onclick="multiple9()" id="button9" type="button" class="edit">Free</button> 
+                    <button onclick="multiple10()" id="button10" type="button" class="edit">Occupied</button> 
+                `;
+                button.style.display = 'none';
+            }
+            function multiple9(){ 
+                const questionDiv = document.getElementById('text4'); 
+                questionDiv.innerHTML = `
+                    <div class="status" id="text4" style="font-size: 20px; color: green;">Status: Free</div> 
+                    <button onclick="changeTextColor4()" id="button4" type="button" class="edit">Edit</button> 
+                `;
+            }
+            function multiple10(){ 
+                const questionDiv = document.getElementById('text4'); 
+                questionDiv.innerHTML = `
+                    <div class="status" id="text4" style="font-size: 20px; color: red;" >Status: Occupied</div> 
+                    <button onclick="changeTextColor4()" id="button4" type="button" class="edit">Edit</button> 
+                `;
+            }
+        </script>
         <div class="parkingbox">
             <div class="number">6</div>
-            <div class="status">Status: Free</div>
-            <button type="button" class="edit">Edit</button>
+            <div class="status" id="text5">Status: Free</div>
+            <button type="button" class="edit" onclick="changeTextColor5()" id="button5">Edit</button>
         </div>
+        <script>
+            function changeTextColor5() { 
+                const questionDiv = document.getElementById('text5');
+                const button = document.getElementById('button5');  
+                questionDiv.innerHTML = `
+                    <button onclick="multiple11()" id="button11" type="button" class="edit">Free</button> 
+                    <button onclick="multiple12()" id="button12" type="button" class="edit">Occupied</button> 
+                `;
+                button.style.display = 'none';
+            }
+            function multiple11(){ 
+                const questionDiv = document.getElementById('text5'); 
+                questionDiv.innerHTML = `
+                    <div class="status" id="text5" style="font-size: 20px; color: green;">Status: Free</div> 
+                    <button onclick="changeTextColor5()" id="button5" type="button" class="edit">Edit</button> 
+                `;
+            }
+            function multiple12(){ 
+                const questionDiv = document.getElementById('text5'); 
+                questionDiv.innerHTML = `
+                    <div class="status" id="text5" style="font-size: 20px; color: red;" >Status: Occupied</div> 
+                    <button onclick="changeTextColor5()" id="button5" type="button" class="edit">Edit</button> 
+                `;
+            }
+        </script>
         <div class="parkingbox">
             <div class="number">7</div>
-            <div class="status">Status: Free</div>
-            <button type="button" class="edit">Edit</button>
+            <div class="status" id="text6">Status: Free</div>
+            <button type="button" class="edit" onclick="changeTextColor6()" id="button6">Edit</button>
         </div>
+        <script>
+            function changeTextColor6() { 
+                const questionDiv = document.getElementById('text6');
+                const button = document.getElementById('button6');  
+                questionDiv.innerHTML = `
+                    <button onclick="multiple13()" id="button13" type="button" class="edit">Free</button> 
+                    <button onclick="multiple14()" id="button14" type="button" class="edit">Occupied</button> 
+                `;
+                button.style.display = 'none';
+            }
+            function multiple13(){ 
+                const questionDiv = document.getElementById('text6'); 
+                questionDiv.innerHTML = `
+                    <div class="status" id="text6" style="font-size: 20px; color: green;">Status: Free</div> 
+                    <button onclick="changeTextColor6()" id="button6" type="button" class="edit">Edit</button> 
+                `;
+            }
+            function multiple14(){ 
+                const questionDiv = document.getElementById('text6'); 
+                questionDiv.innerHTML = `
+                    <div class="status" id="text6" style="font-size: 20px; color: red;" >Status: Occupied</div> 
+                    <button onclick="changeTextColor6()" id="button6" type="button" class="edit">Edit</button> 
+                `;
+            }
+        </script>
         <div class="parkingbox">
             <div class="number">8</div>
-            <div class="status">Status: Free</div>
-            <button type="button" class="edit">Edit</button>
+            <div class="status" id="text7">Status: Free</div>
+            <button type="button" class="edit" onclick="changeTextColor7()" id="button7">Edit</button>
         </div>
+        <script>
+            function changeTextColor7() { 
+                const questionDiv = document.getElementById('text7');
+                const button = document.getElementById('button7');  
+                questionDiv.innerHTML = `
+                    <button onclick="multiple15()" id="button15" type="button" class="edit">Free</button> 
+                    <button onclick="multiple16()" id="button16" type="button" class="edit">Occupied</button> 
+                `;
+                button.style.display = 'none';
+            }
+            function multiple15(){ 
+                const questionDiv = document.getElementById('text7'); 
+                questionDiv.innerHTML = `
+                    <div class="status" id="text7" style="font-size: 20px; color: green;">Status: Free</div> 
+                    <button onclick="changeTextColor7()" id="button7" type="button" class="edit">Edit</button> 
+                `;
+            }
+            function multiple16(){ 
+                const questionDiv = document.getElementById('text7'); 
+                questionDiv.innerHTML = `
+                    <div class="status" id="text7" style="font-size: 20px; color: red;" >Status: Occupied</div> 
+                    <button onclick="changeTextColor7()" id="button7" type="button" class="edit">Edit</button> 
+                `;
+            }
+        </script>
         <div class="parkingbox">
             <div class="number">9</div>
-            <div class="status">Status: Free</div>
-            <button type="button" class="edit">Edit</button>
+            <div class="status" id="text8">Status: Free</div>
+            <button type="button" class="edit" onclick="changeTextColor8()" id="button8">Edit</button>
         </div>
+        <script>
+            function changeTextColor8() { 
+                const questionDiv = document.getElementById('text8');
+                const button = document.getElementById('button8');  
+                questionDiv.innerHTML = `
+                    <button onclick="multiple17()" id="button17" type="button" class="edit">Free</button> 
+                    <button onclick="multiple18()" id="button18" type="button" class="edit">Occupied</button> 
+                `;
+                button.style.display = 'none';
+            }
+            function multiple17(){ 
+                const questionDiv = document.getElementById('text8'); 
+                questionDiv.innerHTML = `
+                    <div class="status" id="text8" style="font-size: 20px; color: green;">Status: Free</div> 
+                    <button onclick="changeTextColor8()" id="button8" type="button" class="edit">Edit</button> 
+                `;
+            }
+            function multiple18(){ 
+                const questionDiv = document.getElementById('text8'); 
+                questionDiv.innerHTML = `
+                    <div class="status" id="text8" style="font-size: 20px; color: red;" >Status: Occupied</div> 
+                    <button onclick="changeTextColor8()" id="button8" type="button" class="edit">Edit</button> 
+                `;
+            }
+        </script>
      </div>
     
     <!-- Footer -->
