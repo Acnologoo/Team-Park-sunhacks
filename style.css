@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: #333;
+    background-color: #333;
     line-height: 1.6;
 }
 
@@ -124,6 +124,62 @@ strong{
 
 .about p{
     color: white;
+}
+/*map */
+
+.background {
+    display: flex;
+    background-color: #292929;
+    margin: auto;
+    margin-top: 250px;
+    height: 645px;
+    width: 795px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.parkingbox {
+    display: flex;
+    box-sizing: border-box;
+    background-color: #292929;
+    margin: 20px;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: rgb(214, 214, 214);
+    height: 150px;
+    width: 225px;
+    flex-wrap: wrap;
+}
+
+.number {
+    color: rgb(214, 214, 214);
+    font-size: 35px;
+    background-color: #292929;
+    height: 45px;
+    width: auto;
+    margin-left: 13px;
+    margin-top: 2px;
+}
+
+.status {
+    color: rgb(66, 234, 136);
+    padding-top: 6px;
+    font-size: 30px;
+    background-color: #292929;
+    height: 45px;
+    width: auto;
+    margin-left: 12px;
+    flex-grow: 1;
+}
+
+.edit {
+    background-color: rgb(131, 138, 140);
+    color: rgb(214, 214, 214);
+    width: 100px;
+    height: 40px;
+    margin: auto;
+    margin-top: 0px;
+    border-radius: 20px;
 }
 
 /* Services Section */
