@@ -16,10 +16,21 @@ img{
     size: 50px;
 }
 
+header{
+    color:#fff;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
     max-width: 1200px;
+}
+
+.container1 {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    color: #fff
 }
 
 strong{
@@ -137,7 +148,6 @@ strong{
     display: flex;
     background-color: #292929;
     margin: auto;
-    margin-top: 250px;
     height: 645px;
     width: 795px;
     justify-content: flex-end;
