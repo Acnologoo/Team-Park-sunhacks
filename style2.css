@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #333;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+img{
+    size: 50px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+strong{
+        font-family: Arial, Helvetica, sans-serif; 
+                background: linear-gradient(to right, rgb(66, 234, 136), 
+                        rgb(66,234,136), rgb(255, 255, 255), #ffffff); 
+                -webkit-text-fill-color: transparent; 
+                -webkit-background-clip: text; 
+}
+
+/* Navigation Bar */
+.navbar {
+    font-family: "Raleway", sans-serif;
+    background-color: #333;
+    padding: 1rem 0;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    z-index: 1000; 
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-menu {
+    list-style: none;
+    float: right;
+}
+
+.nav-menu li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+    color: rgb(66,234,136);
+}
+
+/* Map */
+.background {
+    display: flex;
+    background-color: #292929;
+    margin: auto;
+    margin-top: 250px;
+    height: 645px;
+    width: 795px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.parkingbox {
+    display: flex;
+    box-sizing: border-box;
+    background-color: #292929;
+    margin: 20px;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: rgb(214, 214, 214);
+    height: 150px;
+    width: 225px;
+    flex-wrap: wrap;
+}
+
+.number {
+    color: rgb(214, 214, 214);
+    font-size: 35px;
+    background-color: #292929;
+    height: 45px;
+    width: auto;
+    margin-left: 13px;
+    margin-top: 2px;
+}
+
+.status {
+    color: rgb(66, 234, 136);
+    padding-top: 6px;
+    font-size: 30px;
+    background-color: #292929;
+    height: 45px;
+    width: auto;
+    margin-left: 12px;
+    flex-grow: 1;
+}
+
+.edit {
+    background-color: rgb(131, 138, 140);
+    color: rgb(214, 214, 214);
+    width: 100px;
+    height: 40px;
+    margin: auto;
+    margin-top: 0px;
+    border-radius: 20px;
+}
+
+/* Hero Section */
+.hero {
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: rgb(66,234,136);
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.6s;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+/* Footer */
+.footer {
+    font-family: "Raleway", sans-serif;
+    background-color: #333;
+    padding: 1rem 0;
+    color: white;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
+
+.center-div {
+    transition: transform 0.3s ease;
+}
+.center-div:hover{
+    transform: translateY(-10px);
+}
+
+.right-aligned-div {
+    width: 600px;
+    height: 150px;
+    background-color: transparent;
+    color: white;
+    padding: 20px;
+    float: right;
+    transition: transform 0.3s ease;
+}
+
+.left-aligned-div:hover{
+    transform: translateY(-10px);
+}
+
+.right-aligned-div:hover{
+    transform: translateY(-10px);
+}
+.textmakeup{
+    font-family: "Raleway", sans-serif;
+    font-size: 50px !important;
+}
+
+.textmakeup2{
+    font-family: "Raleway", sans-serif;
+    font-size: 22.5px !important;
+}
+
+.icon {
+    font-size: 48px; /* Change this value to resize the icon */
+    color: rgb(66, 234, 136); /* Example color */
+}
