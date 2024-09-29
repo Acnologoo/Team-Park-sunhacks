@@ -12,6 +12,10 @@ body {
     line-height: 1.6;
 }
 
+img{
+    size: 100px;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
