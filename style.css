@@ -173,7 +173,7 @@ img{
 .left-aligned-div {
     width: 350px;
     height: 500px;
-    background-color: rgb(66,234,136);
+    background-color: rgb(66,246, 136);
     color: white;
     padding: 20px;
     float: left; 
@@ -182,7 +182,7 @@ img{
 }
 
 .right-aligned-div {
-    width: 500px;
+    width: 600px;
     height: 500px;
     background-color: transparent;
     color: white;
